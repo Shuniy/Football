@@ -21,6 +21,14 @@
 		C36DB038293CB8A800F7718B /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DB037293CB8A800F7718B /* LogoView.swift */; };
 		C36DB03A293CBB5500F7718B /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DB039293CBB5500F7718B /* UIApplication+Extension.swift */; };
 		C36DB03C293CBBB700F7718B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DB03B293CBBB700F7718B /* UIViewController+Extension.swift */; };
+		C36DB03E293CBE2300F7718B /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DB03D293CBE2300F7718B /* PlayerModel.swift */; };
+		C36DB040293CBE5800F7718B /* Codable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DB03F293CBE5800F7718B /* Codable+Extension.swift */; };
+		C36DB042293CBF7F00F7718B /* FeaturedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DB041293CBF7F00F7718B /* FeaturedItemView.swift */; };
+		C36DB044293CBFE600F7718B /* FeaturedTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DB043293CBFE600F7718B /* FeaturedTabView.swift */; };
+		C36DB046293CC67900F7718B /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DB045293CC67900F7718B /* CategoryModel.swift */; };
+		C36DB048293CC73F00F7718B /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DB047293CC73F00F7718B /* CategoryItemView.swift */; };
+		C36DB04A293CC84E00F7718B /* CategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DB049293CC84E00F7718B /* CategoryGridView.swift */; };
+		C36DB04C293CC93A00F7718B /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DB04B293CC93A00F7718B /* SectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +48,14 @@
 		C36DB037293CB8A800F7718B /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		C36DB039293CBB5500F7718B /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		C36DB03B293CBBB700F7718B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		C36DB03D293CBE2300F7718B /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		C36DB03F293CBE5800F7718B /* Codable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extension.swift"; sourceTree = "<group>"; };
+		C36DB041293CBF7F00F7718B /* FeaturedItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItemView.swift; sourceTree = "<group>"; };
+		C36DB043293CBFE600F7718B /* FeaturedTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedTabView.swift; sourceTree = "<group>"; };
+		C36DB045293CC67900F7718B /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		C36DB047293CC73F00F7718B /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
+		C36DB049293CC84E00F7718B /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
+		C36DB04B293CC93A00F7718B /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +135,11 @@
 				C36DB033293C8B8B00F7718B /* FooterView.swift */,
 				C36DB035293CB7B700F7718B /* NavigationBarView.swift */,
 				C36DB037293CB8A800F7718B /* LogoView.swift */,
+				C36DB041293CBF7F00F7718B /* FeaturedItemView.swift */,
+				C36DB043293CBFE600F7718B /* FeaturedTabView.swift */,
+				C36DB047293CC73F00F7718B /* CategoryItemView.swift */,
+				C36DB049293CC84E00F7718B /* CategoryGridView.swift */,
+				C36DB04B293CC93A00F7718B /* SectionView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -133,6 +154,8 @@
 		C36DB02D293C89AB00F7718B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C36DB03D293CBE2300F7718B /* PlayerModel.swift */,
+				C36DB045293CC67900F7718B /* CategoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -142,6 +165,7 @@
 			children = (
 				C36DB039293CBB5500F7718B /* UIApplication+Extension.swift */,
 				C36DB03B293CBBB700F7718B /* UIViewController+Extension.swift */,
+				C36DB03F293CBE5800F7718B /* Codable+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -237,13 +261,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36DB046293CC67900F7718B /* CategoryModel.swift in Sources */,
 				C36DB03C293CBBB700F7718B /* UIViewController+Extension.swift in Sources */,
 				C36DB015293C87F800F7718B /* ContentView.swift in Sources */,
+				C36DB04A293CC84E00F7718B /* CategoryGridView.swift in Sources */,
+				C36DB048293CC73F00F7718B /* CategoryItemView.swift in Sources */,
 				C36DB038293CB8A800F7718B /* LogoView.swift in Sources */,
+				C36DB03E293CBE2300F7718B /* PlayerModel.swift in Sources */,
 				C36DB034293C8B8B00F7718B /* FooterView.swift in Sources */,
+				C36DB042293CBF7F00F7718B /* FeaturedItemView.swift in Sources */,
+				C36DB044293CBFE600F7718B /* FeaturedTabView.swift in Sources */,
 				C36DB013293C87F800F7718B /* FootballApp.swift in Sources */,
 				C36DB031293C89E400F7718B /* Constant.swift in Sources */,
+				C36DB04C293CC93A00F7718B /* SectionView.swift in Sources */,
 				C36DB036293CB7B700F7718B /* NavigationBarView.swift in Sources */,
+				C36DB040293CBE5800F7718B /* Codable+Extension.swift in Sources */,
 				C36DB03A293CBB5500F7718B /* UIApplication+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
