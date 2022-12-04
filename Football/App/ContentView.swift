@@ -6,16 +6,25 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            VStack(spacing: 0) {
+                NavigationBarView()
+                    .padding(.horizontal, 15)
+                    .padding(.bottom)
+                    .padding(.top, UIApplication.shared.keyWindow?.safeAreaInsets.top)
+                    .background(.white)
+                    .shadow(color: .black.opacity(0.05), radius: 5, x: 0, y: 5)
+                Spacer()
+                FooterView()
+                    .padding(.horizontal)
+            }
+            .background(colorBackground.ignoresSafeArea(.all, edges: .all))
         }
-        .padding()
+        .ignoresSafeArea(.all, edges: .top)
     }
 }
 
