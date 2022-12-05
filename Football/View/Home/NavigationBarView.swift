@@ -16,7 +16,6 @@ struct NavigationBarView: View {
                 
             } label: {
                 Image(systemName: "magnifyingglass")
-//                    .resizable()
                     .scaledToFit()
                     .font(.title)
                     .foregroundColor(.black)
@@ -38,7 +37,6 @@ struct NavigationBarView: View {
             } label: {
                 ZStack {
                     Image(systemName: "cart")
-//                        .resizable()
                         .scaledToFit()
                         .font(.title)
                         .foregroundColor(.black)

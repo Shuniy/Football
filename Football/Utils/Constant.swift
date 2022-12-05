@@ -18,3 +18,5 @@ let rowSpacing:  CGFloat = 10
 var gridLayout: [GridItem] {
     return Array(repeating: GridItem(.flexible(), spacing: rowSpacing), count: 2)
 }
+
+let products: [ProductModel] = Bundle.main.decode("product.json")
