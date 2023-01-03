@@ -20,12 +20,18 @@ struct ProductDetailView: View {
                 .padding(.horizontal)
                 .zIndex(1)
             VStack(alignment: .center, spacing: 0) {
+                RatingSizesDetailView()
+                    .padding(.bottom)
                 ScrollView(.vertical, showsIndicators: false) {
                     Text(product.description)
                         .font(.system(.body, design: .rounded))
                         .foregroundColor(.gray)
                         .multilineTextAlignment(.leading)
                 }
+                QuantityFavouriteDetailView()
+                    .padding(.vertical, 10)
+                AddToCartDetailView(product: product)
+                    .padding(.bottom, UIApplication.shared.keyWindow?.safeAreaInsets.bottom)
                 Spacer()
             }
             .padding(.horizontal)

@@ -32,6 +32,9 @@ struct ContentView: View {
                                     } label: {
                                         ProductItemView(product: product)
                                     }
+                                    .onTapGesture {
+                                        feedback.impactOccurred()
+                                    }
                                 }
                             }
                             .padding(15)

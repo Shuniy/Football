@@ -17,6 +17,8 @@ struct HeaderDetailView: View {
                 .font(.largeTitle)
                 .fontWeight(.black)
         }
+        .foregroundColor(.white)
+        .padding(.top)
     }
 }
 

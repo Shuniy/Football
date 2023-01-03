@@ -13,7 +13,7 @@ struct NavigationBarView: View {
     var body: some View {
         HStack {
             Button {
-                
+                feedback.impactOccurred()
             } label: {
                 Image(systemName: "magnifyingglass")
                     .scaledToFit()
@@ -21,19 +21,17 @@ struct NavigationBarView: View {
                     .foregroundColor(.black)
             }
             Spacer()
-
             LogoView()
                 .opacity(isAnimated ? 1: 0)
                 .offset(x: 0, y: isAnimated ? 0 : -25)
                 .onAppear {
                     withAnimation(.easeOut(duration: 0.5)) {
-                        isAnimated.toggle()
+                        isAnimated = true
                     }
                 }
-        
             Spacer()
             Button {
-                
+                feedback.impactOccurred()
             } label: {
                 ZStack {
                     Image(systemName: "cart")
@@ -44,7 +42,6 @@ struct NavigationBarView: View {
                         .fill(.red)
                         .frame(width: 14, height: 14)
                         .offset(x: 13, y: -10)
-                    
                 }
             }
 

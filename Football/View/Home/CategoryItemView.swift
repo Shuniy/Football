@@ -11,7 +11,7 @@ struct CategoryItemView: View {
     let category: CategoryModel
     var body: some View {
         Button {
-            
+            feedback.impactOccurred()
         } label: {
             HStack(alignment: .center, spacing: 6) {
                 Image(category.image)
