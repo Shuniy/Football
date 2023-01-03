@@ -18,7 +18,7 @@ struct FooterView: View {
                 .renderingMode(.template)
                 .foregroundColor(.gray)
                 .layoutPriority(0)
-            Text("Copyright Shubham Kumar \nAll rights reserved")
+            Text("Copyright © Shubham Kumar \nAll rights reserved")
                 .font(.footnote)
                 .fontWeight(.bold)
                 .foregroundColor(.gray)

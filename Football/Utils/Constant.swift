@@ -20,5 +20,5 @@ var gridLayout: [GridItem] {
 }
 
 let products: [ProductModel] = Bundle.main.decode("product.json")
-
 let brands: [BrandModel] = Bundle.main.decode("brand.json")
+let sampleProduct: ProductModel = products[0]
